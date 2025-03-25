@@ -80,13 +80,22 @@ publicationCards.forEach(card => {
 });
 
 // // Contact Form Submission (Prevent default for demo)
-// const contactForm = document.getElementById('contactForm');
-// if (contactForm) {
-//     contactForm.addEventListener('submit', function(e) {
-//         e.preventDefault();
-//         alert('Thank you for your message! This is a demo form - in a real implementation, this would send your message.');
-//     });
-// }
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      .then(() => {
+        alert('Message sent successfully!');
+        contactForm.reset();
+      }, (error) => {
+        alert('Oops, something went wrong');
+        console.error(error);
+      });
+  });
+}
 
 // Background Particles
 function createParticles() {
