@@ -22,7 +22,7 @@ body {
     position: relative;
 }
 
-/* Background Elements */
+
 .bg-grid {
     position: fixed;
     top: 0;
@@ -50,14 +50,13 @@ body.dark-mode .bg-grid {
     pointer-events: none;
 }
 
-/* Header */
+
 header {
     padding: 1.5rem 0;
     position: fixed;
     width: 100%;
     z-index: 100;
     transition: var(--transition);
-    /* background-color: rgba(245, 245, 245, 0.95); */
     background-color: rgb(245, 245, 245);
     backdrop-filter: blur(5px);
     border-bottom: 1px solid var(--secondary);
@@ -155,7 +154,6 @@ nav {
     color: var(--dark);
 }
 
-/* About Section */
 .section {
     padding: 100px 0;
     position: relative;
@@ -305,7 +303,6 @@ nav {
     height: 100%;
 }
 
-/* Skills Section */
 .skills-container {
     margin-top: 50px;
 }
@@ -387,11 +384,11 @@ nav {
     bottom: calc(100% + 10px);
     left: 50%;
     transform: translateX(-50%);
-    background: var(--secondary); /* 💡 Your theme's accent color */
-    color: var(--light);           /* light text for contrast */
-    padding: 10px 14px;            /* slightly larger padding */
+    background: var(--secondary); 
+    color: var(--light);          
+    padding: 10px 14px;          
     border-radius: 10px;
-    font-size: 1.15rem;            /* bigger font */
+    font-size: 1.15rem;        
     font-weight: 500;
     white-space: nowrap;
     opacity: 0;
@@ -418,7 +415,7 @@ nav {
     font-weight: 600;
 }
 
-/* Projects Section */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -515,7 +512,7 @@ nav {
     color: var(--secondary);
 }
 
-/* Publications Section */
+
 .publications-container {
     margin-top: 50px;
 }
@@ -628,7 +625,6 @@ nav {
     transform: rotate(180deg);
 }
 
-/* Contact Section */
 .contact-container {
     display: flex;
     margin-top: 50px;
@@ -773,7 +769,6 @@ textarea.form-control {
     transform: translateY(-3px);
 }
 
-/* Footer */
 footer {
     background-color: var(--primary);
     color: var(--light);
@@ -863,7 +858,7 @@ footer {
     opacity: 0.8;
 }
 
-/* Animations */
+
 @keyframes fadeUp {
     to {
         opacity: 1;
@@ -877,7 +872,7 @@ footer {
     }
 }
 
-/* Dark Mode */
+
 body.dark-mode {
     background-color: var(--dark);
     color: var(--light);
@@ -951,7 +946,7 @@ body.dark-mode .skill-category.active {
     color: var(--light);
 }
 
-/* Media Queries */
+
 @media (max-width: 992px) {
     .about-text h1 {
         font-size: 2.8rem;
