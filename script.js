@@ -86,7 +86,7 @@ if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_67sf6xu', 'template_t28ffdu', this)
       .then(() => {
         alert('Message sent successfully!');
         contactForm.reset();
