@@ -79,7 +79,7 @@ publicationCards.forEach(card => {
     });
 });
 
-// // Contact Form Submission (Prevent default for demo)
+
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
