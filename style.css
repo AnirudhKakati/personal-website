@@ -397,8 +397,8 @@ body.dark-mode .timeline-content {
   }
   
   .expanded .expand-btn i {
-    transition: var(--transition);
     transform: rotate(180deg);
+    transition: transform 0.3s ease;
   }
 
 
@@ -442,10 +442,14 @@ body.dark-mode .timeline-content {
   
   .expanded .expand-btn-exp i {
     transform: rotate(180deg);
+    transition: transform 0.3s ease;
   }
 
 
-
+  .expand-btn i,
+  .expand-btn-exp i {
+      transition: transform 0.3s ease;
+  }
 
 
 
