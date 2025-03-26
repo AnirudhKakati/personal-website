@@ -288,3 +288,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.expand-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.timeline-item');
+        item.classList.toggle('expanded');
+        const expanded = item.classList.contains('expanded');
+        btn.innerHTML = expanded
+          ? 'Hide Relevant Coursework <i class="fas fa-chevron-up"></i>'
+          : 'Show Relevant Coursework <i class="fas fa-chevron-down"></i>';
+      });
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.expand-btn-exp').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.timeline-item');
+        item.classList.toggle('expanded');
+        const expanded = item.classList.contains('expanded');
+        btn.innerHTML = expanded
+          ? 'Hide Details <i class="fas fa-chevron-up"></i>'
+          : 'Show Details <i class="fas fa-chevron-down"></i>';
+      });
+    });
+  });

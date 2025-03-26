@@ -303,6 +303,153 @@ nav {
     height: 100%;
 }
 
+
+
+
+
+.timeline {
+  position: relative;
+  margin-top: 3rem;
+  padding-left: 50px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* ICON itself */
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+
+/* TIMELINE CONTENT BOX */
+.timeline-content {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .timeline-content {
+  background-color: #222;
+}
+  
+  .timeline-item:hover .timeline-content {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+  }
+  
+  .timeline-date {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary);
+    margin-bottom: 10px;
+  }
+  
+
+  
+  /* Expandable coursework */
+  .expandable .expand-btn {
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: var(--secondary);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .expandable .expand-btn i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .coursework-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 1rem;
+    list-style: disc inside;
+  }
+  
+  .expanded .coursework-list {
+    max-height: 500px;
+  }
+  
+  .expanded .expand-btn i {
+    transition: var(--transition);
+    transform: rotate(180deg);
+  }
+
+
+
+  /* Expandable experience detials */
+  .expandable .expand-btn-exp {
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: var(--secondary);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .expandable .expand-btn-exp i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* .details-list {
+    margin-top: 10px;
+    list-style: disc inside;
+    display: none;
+    padding-left: 1rem;
+  } */
+
+  .details-list{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 1rem;
+    list-style: disc inside;
+  }
+  
+  .expanded .details-list {
+    max-height: 500px;
+}
+  
+  .expanded .expand-btn-exp i {
+    transform: rotate(180deg);
+  }
+
+
+
+
+
+
+
 .skills-container {
     margin-top: 50px;
 }
@@ -902,8 +1049,7 @@ body.dark-mode .section-title {
     color: var(--light);
 }
 
-body.dark-mode .about-text h1,
-body.dark-mode .about-text h3 {
+body.dark-mode .about-text h1 {
     color: var(--light);
 }
 
