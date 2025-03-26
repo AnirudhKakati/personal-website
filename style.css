@@ -22,7 +22,6 @@ body {
     position: relative;
 }
 
-
 .bg-grid {
     position: fixed;
     top: 0;
@@ -49,7 +48,6 @@ body.dark-mode .bg-grid {
     opacity: 0.2;
     pointer-events: none;
 }
-
 
 header {
     padding: 1.5rem 0;
@@ -303,10 +301,6 @@ nav {
     height: 100%;
 }
 
-
-
-
-
 .timeline {
   position: relative;
   margin-top: 3rem;
@@ -318,7 +312,6 @@ nav {
   margin-bottom: 30px;
 }
 
-/* ICON itself */
 .timeline-icon {
   position: absolute;
   left: 0;
@@ -335,8 +328,6 @@ nav {
   z-index: 2;
 }
 
-
-/* TIMELINE CONTENT BOX */
 .timeline-content {
   background: #fff;
   padding: 20px 25px;
@@ -365,7 +356,7 @@ body.dark-mode .timeline-content {
   
 
   
-  /* Expandable coursework */
+  /* expandable coursework */
   .expandable .expand-btn {
     margin-top: 15px;
     background: none;
@@ -403,7 +394,7 @@ body.dark-mode .timeline-content {
 
 
 
-  /* Expandable experience detials */
+  /* expandable experience detials */
   .expandable .expand-btn-exp {
     margin-top: 15px;
     background: none;
@@ -420,13 +411,6 @@ body.dark-mode .timeline-content {
     margin-left: 5px;
     transition: transform 0.3s ease;
   }
-  
-  /* .details-list {
-    margin-top: 10px;
-    list-style: disc inside;
-    display: none;
-    padding-left: 1rem;
-  } */
 
   .details-list{
     max-height: 0;
@@ -450,7 +434,6 @@ body.dark-mode .timeline-content {
   .expand-btn-exp i {
       transition: transform 0.3s ease;
   }
-
 
 
 
@@ -589,17 +572,6 @@ body.dark-mode .timeline-content {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-/* .project-image {
-    height: 180px;
-    overflow: hidden;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition);
-} */
 
 .project-card:hover{
     transform: scale(1.05);
