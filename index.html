@@ -52,7 +52,7 @@
                     <h1>Hi, I'm Anirudh!</h1>
                     <h3>Data Science Graduate Student</h3>
                     <p>I'm currently pursuing my Master's in Data Science at University of Colorado Boulder. My software journey began at Ramaiah Institute of Technology in India, with a Bachelor's in Computer Science & Engineering.</p>
-                    <p>I enjoy designing scalable data pipelines, implementing AI/ML solutions, and transforming raw data into actionable insights. My experience includes working at Quicken Inc. as a Product Development Intern, where I built high-performance data pipelines and deployed AWS-based solutions, and at Digitize Things Inc. as a Software Engineering Intern, where I'm developing a multi-agentic AI workflow builder platform using CrewAI, FastAPI, PostgreSQL, and Azure.</p>
+                    <p>I enjoy designing scalable data pipelines, implementing AI/ML solutions, and transforming raw data into actionable insights. My experience includes working at Quicken Inc. as a Product Development Intern, where I built high-performance data pipelines and deployed AWS-based solutions, and at Digitize Things Inc. as a Software Engineering Intern, where I'm developed a multi-agentic AI workflow builder platform using CrewAI, FastAPI, PostgreSQL, and Azure.</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
                         <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -76,7 +76,7 @@
                 <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
                 <div class="timeline-content">
                     <h3>Software Engineering Intern — Digitze Things Inc.</h3>
-                    <span class="timeline-date">June 2025 – Present</span>
+                    <span class="timeline-date">June 2025 – Oct 2025</span>
                     <p>Developed a multi-agentic workflow builder platform and created multiple domain-specific assistants.</p>
                     
                     <!-- <ul class="details-list">
@@ -86,10 +86,10 @@
                         <li>Created a local Docker environment for AWS EMR and Glue, enabling testing of Spark, Pydeequ and Glue jobs locally </li>
                     </ul> -->
                     <ul class="details-list">
-                        <li>Built an Assistant Builder platform that lets users create specialized AI workflow systems by combining multiple AI agents, tasks, and tools with dynamic input handling and output processing - enabling teams to automate complex business processes without coding</li>
-                        <li>Developed a dual-backend microservices architecture using FastAPI and PostgreSQL with comprehensive REST APIs managing entities like agents, tasks, workflows, LLM configs, dependencies, tools, etc., supporting real-time multi-agent AI orchestration with CrewAI</li>
-                        <li>Created specialized BPMN Flowbuilder assistants for domain-specific workflow generation including Product Lifecycle, Sales & Quotations, Order Management, and Subscription Management processes</li>
-                        <li>Designed connector-building assistants for creating WSO2 integrations that enable external ERP systems to connect with internal business processes</li>
+                        <li>Architected a multi-agent Assistant Builder platform using FastAPI, CrewAI, and PostgreSQL, letting users create and execute AI workflow systems on demand by combining multiple agents, tasks, tools, and LLM configurations — enabling teams to automate complex business processes without writing code</li>
+                        <li>Built 15+ REST APIs managing 10+ core entities (agents, tasks, workflows, LLM configs, tools, dependencies) with full CRUD operations, powering real-time multi-agent orchestration and execution through a dual-backend microservices architecture</li>
+                        <li>Developed AI assistants for BPMN workflow generation and WSO2 connector building using multi-agent LLM orchestration, automating around 90% of setup work and generating executable artifacts directly from natural language input</li>
+                        <li>Prototyped an NL2SQL Database Assistant using RAG, embedding ~7,500 schema chunks from 746 tables into PostgreSQL with OpenAI's text-embedding-3-small model, achieving around 70% query translation accuracy</li>
                     </ul>
                     <button class="expand-btn-exp">Show Details <i class="fas fa-chevron-down"></i></button>
                 </div>
@@ -104,10 +104,10 @@
                     <p>Interned for the company's Data Engineering Team</p>
                     
                     <ul class="details-list">
-                        <li>Designed a high-performance data pipeline to capture and process DynamoDB data in Apache Parquet using Parallel Scan API with multi-threading, efficiently importing 1M+ records in seconds for scalable querying in Athena </li>
-                        <li>Deployed and monitored two data pipelines using AWS services (Lambda, Glue, DynamoDB Streams), improving pipeline stability and data availability for analytics </li>
-                        <li>Upgraded Appsflyer API from V1 to V2, including KMS encryption for secure API token management, improving security and compliance </li>
-                        <li>Created a local Docker environment for AWS EMR and Glue, enabling testing of Spark, Pydeequ and Glue jobs locally </li>
+                        <li>Architected a parallelized data ingestion pipeline for DynamoDB using multi-threaded scans and Apache Parquet, reducing data import time by 95% and enabling near real-time querying of 1M+ records in Athena</li>
+                        <li>Operationalized and monitored two AWS-native pipelines (Lambda, Glue, DynamoDB Streams), boosting pipeline uptime by 40% and cutting data availability latency by 60%</li>
+                        <li>Upgraded Appsflyer integration from V1 to V2 APIs with KMS-based token encryption, enhancing security and reducing manual API failure debugging by 75%</li>
+                        <li>Simulated EMR and Glue environments locally with Docker, enabling local testing of Spark, Pydeequ and Glue jobs and reducing dev cycle time by 50%</li>
                     </ul>
                     <button class="expand-btn-exp">Show Details <i class="fas fa-chevron-down"></i></button>
                 </div>
@@ -139,6 +139,7 @@
                 <li>Machine Learning</li>
                 <li>Big Data Architecture</li>
                 <li>Natural Language Processing</li>
+                <li>Information Visualization</li>
                 </ul>
             </div>
             </div>
@@ -288,7 +289,7 @@
                     
                     <div class="skill-item" data-category="data-science">
                         <div class="skill-icon">
-                            <i class="fas fa-project-diagram"></i>
+                            <i class="fas fa-microchip"></i>
                         </div>
                         <div class="skill-name">TensorFlow</div>
                     </div>
@@ -298,6 +299,13 @@
                             <i class="fas fa-robot"></i>
                         </div>
                         <div class="skill-name">CrewAI</div>
+                    </div>
+
+                    <div class="skill-item" data-category="data-science">
+                        <div class="skill-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="skill-name">LangGraph</div>
                     </div>
 
                     <div class="skill-item" data-category="data-science">
@@ -351,6 +359,13 @@
                         <div class="skill-name">PostgreSQL</div>
                     </div>
 
+                    <div class="skill-item" data-category="cloud">
+                        <div class="skill-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <div class="skill-name">Redis</div>
+                    </div>
+
                     <div class="skill-item" data-category="cloud" data-tooltip="S3, Lambda, DynamoDB, EC2, Athena, CloudWatch, IAM, KMS">
                         <div class="skill-icon"><i class="fab fa-aws"></i></div>
                         <div class="skill-name">AWS</div>
@@ -393,6 +408,33 @@
             <h2 class="section-title">Featured Projects</h2>
             <p class="section-subtitle">Innovative solutions I've created</p>
             <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+   
+                    <div class="project-content">
+                        <h3 class="project-title">Event-Driven Self Healing Data Platform **WIP**</h3>
+                        <div class="project-tags">
+                            <span class="project-tag">GCP</span>
+                            <span class="project-tag">LangGraph</span>
+                            <span class="project-tag">FastAPI</span>
+                            <span class="project-tag">RAG</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Redis</span>
+                            <span class="project-tag">Terraform</span>
+                            <span class="project-tag">Docker</span>
+                        </div>
+                        <p class="project-description">
+                            A multi-tenant, event-driven GCP data platform with anomaly detection, circuit breaker patterns, and a LangGraph-powered diagnostic agent that classifies failures and triggers targeted recovery actions.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/AnirudhKakati/self-healing-data-platform" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Project 1 -->
                 <div class="project-card">
    
